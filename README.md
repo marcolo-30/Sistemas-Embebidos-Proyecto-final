@@ -29,6 +29,18 @@ El protocolo de pruebas es el siguiente:
 
 - Desconectar la potencia de la tarjeta es decir quitarle fuente. simulando una falla eléctrica, después vuelvo a conectar y todo debe funcionar normalmente.
 
+## Diagrama
+
+Para el desarrollo del proyecto se utiliza:
+- RaspberryPi3
+- GPS Neo 6m
+- Accelerometro ADXL345
+- Servidor(Pc Personal)
+
+<p align="center">
+  <img width="600" height="400" src="https://user-images.githubusercontent.com/84221113/120865759-42964080-c554-11eb-902d-889f7eca7427.png">
+</p>
+
 ## Desarrollo
 
 Se crean 6 procesos en la ejecucion del programa principal:
