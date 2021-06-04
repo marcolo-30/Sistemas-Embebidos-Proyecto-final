@@ -72,5 +72,5 @@ Nota: los videos de desconexión Internet y llenado de fyle system no poseen aud
 ## Conclusiones 
 - El uso de multiprocesamiento facilita la ejecución de scripts en paralelo.
 - Teniendo en cuenta de que los procesos no utilizan el mismo espacio de memoria el uso de colas permite realizar transferencia de informacion entre procesos. 
-
+- Para la protección de los datos se puede cifrar la micro SD utilizando LUKS y Kali como se puede evidenciar en el siguiente link https://www.redeszone.net/raspberry-pi/proteger-raspberry-pi-cifrando-datos-luks-kali-linux/
 
