@@ -1,6 +1,6 @@
 ### Script principal ###
 
-import recoge_datos
+import recoge_datos 
 import subprocess
 import requests
 import os
@@ -10,7 +10,7 @@ import acc as Acc
 import gps as GPS
 from datetime import datetime
 
-def captura_datos():
+def captura_datos():   # Función para capturar los datos de los sensores y guardarlos en un archivo csv
 	try:
 	        now = datetime.now()
 	        hora_dato = now.strftime("%Y%m%d:%H:%M:%S")
@@ -26,12 +26,12 @@ def captura_datos():
 	except:
 		print("error")
 		
-def nuevo_archivo():
+def nuevo_archivo():  # Función para guardar el archivo en la carpeta temporal. 
 
 	subprocess.call(['bash','./guardar.sh'])
 
 
-def	capture(stop):
+def	capture(stop): #funcion que define si se siguen capturando datos o para por espacio lleno en el file system.
     print("Capturando datos con el siguiente formato: Fecha;Latitud;Longitud;Accx;Accy;Accz")
     while True:
         a=stop.get()
@@ -44,7 +44,7 @@ def	capture(stop):
             
 
 
-def get_size(start_path):
+def get_size(start_path):  #Función para obtener el tamaño de la carpeta donde se almacenan los archivos encriptados para enviar.
     
     try:
         total_size = 0
@@ -56,7 +56,7 @@ def get_size(start_path):
     except:
         print("Ya hay espacio reestableciendo toma de datos")
 
-def check_carpeta(stop):
+def check_carpeta(stop):  #Funcion para evaluar si la carpeta pasa el limite de peso establecido por el usuario para nuestro ejemplo 4 archivos. 
     while True:
         tam=get_size('./Carpeta_envio')
         
@@ -67,14 +67,14 @@ def check_carpeta(stop):
             stop.put(0)
             time.sleep(60)
         
-def check_sensores():
+def check_sensores(): # Función que revisa el estado de conexión del GPS en caso de que no lo detecte por mas de dos minutos reinicia el sistema.
 	
 	while True:
     
         	subprocess.call(['bash','./check_sensores.sh'])
 
 	
-def internet_conect(q):
+def internet_conect(q): # Función para evaluar si hay acceso a internet. 
     while True:
         try:
             request = requests.get("https://www.google.com", timeout=5)
@@ -85,14 +85,14 @@ def internet_conect(q):
         else:
             q.put(1)
 
-def envia(q):
+def envia(q): #Funcion para enviar los datos mediante scp al servidor.
 
 	while True:
 		conexion=q.get()
 		if conexion==1:
             		subprocess.call(['bash','./enviar.sh'])
 
-def comprime():
+def comprime(): #Función que comprime y encripta el archivo a enviar con su correspondiente llave. 
 
     while True:
     
@@ -101,8 +101,8 @@ def comprime():
 
 if __name__ == "__main__":
     
-    q  = Queue()
-    stop= Queue()
+    q  = Queue() #Cola para intercambiar información entre procesos referente a la conexión de internet. 
+    stop= Queue() #Cola para intercambiar información referente al estado de ocupación del file system. 
     
     p1 = Process(target=internet_conect, args=(q,))
     p2 = Process(target=check_carpeta, args=(stop,))
