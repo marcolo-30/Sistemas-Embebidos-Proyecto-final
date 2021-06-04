@@ -1,3 +1,5 @@
+### Script para capturar los datos del GPS ###
+
 import serial
 import time
 import string
@@ -23,4 +25,4 @@ def obtener_posicion():
 				return gps
 
 		except:
-			print(" se cayo el gps ")
+			print(" No hay conexion con el gps ")
