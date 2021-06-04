@@ -1,15 +1,11 @@
 #! /bin/bash
 
-
-
+# Realiza el envio de los archivos compresos que se encuentran en la Carpeta_envio #
 
 if [ ! "$(ls ~/Final/Carpeta_envio/)" ]
 then
 	enviado=0
 else 
-
-
-
 
 scp ~/Final/Carpeta_envio/* marcolo@192.168.1.109:~/Escritorio/Server
 
@@ -21,7 +17,5 @@ then
 else
     echo "No se pudo enviar archivo"
 fi
-
-#scp aesKey.txt.crypted  marcolo@192.168.0.15:~/Escritorio/Server
 
 fi
