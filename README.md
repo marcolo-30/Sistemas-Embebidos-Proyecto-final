@@ -34,12 +34,18 @@ El protocolo de pruebas es el siguiente:
 
 ## Desarrollo
 
-| Lenguaje      | Programa |
+Se crean 6 procesos en la ejecucion del programa principal:
+
+| Proceso      | Script |
 | ------------- | ------------- |
-| C/C++, libreria Wiring Pi  | [Wiringpi](https://github.com/Fredycuellar/Proyecto1_Sistemas_Embebidos/blob/94931f9a6c48a0345d5b23ea3d00ba4b70d7f1ef/WiringPi) |
-| C/C++, libreria BCM |[BCM](https://github.com/Fredycuellar/Proyecto1_Sistemas_Embebidos/blob/17cf8d916295f7ada7c51e401e840512e4fff93e/BCM_) |
-| Python | [Python](https://github.com/Fredycuellar/Proyecto1_Sistemas_Embebidos/blob/5f52e727b520e943d16d735efebd35be09166315/Python)  |
-|bash | [Bash](https://github.com/Fredycuellar/Proyecto1_Sistemas_Embebidos/blob/d43c243f8bea0d57bbbf3a5e0e3c35a0b7ee1acd/Bash) |
+| Revisar la conexion de internet | [internet.py](https://github.com/Fredycuellar/Proyecto1_Sistemas_Embebidos/blob/94931f9a6c48a0345d5b23ea3d00ba4b70d7f1ef/WiringPi) |
+| Revisar la ocupación de la carpeta temporal (Fyle System) |[peso_carpeta.py](https://github.com/Fredycuellar/Proyecto1_Sistemas_Embebidos/blob/17cf8d916295f7ada7c51e401e840512e4fff93e/BCM_) |
+| Capturar los datos de los sensores y guardarlos en un archivo .csv | [recoge_datos.py](https://github.com/Fredycuellar/Proyecto1_Sistemas_Embebidos/blob/5f52e727b520e943d16d735efebd35be09166315/Python)  |
+|Comprimir los archivos. | [Comprimir.sh](https://github.com/Fredycuellar/Proyecto1_Sistemas_Embebidos/blob/d43c243f8bea0d57bbbf3a5e0e3c35a0b7ee1acd/Bash) |
+| Enviar los archivos comprimidos al servidor | [enviar.sh](https://github.com/Fredycuellar/Proyecto1_Sistemas_Embebidos/blob/5f52e727b520e943d16d735efebd35be09166315/Python)  |
+|Revisar la conexión de los sensores.
+ | [check_sensores.sh](https://github.com/Fredycuellar/Proyecto1_Sistemas_Embebidos/blob/d43c243f8bea0d57bbbf3a5e0e3c35a0b7ee1acd/Bash) |
+
 
 ## Pruebas
 
