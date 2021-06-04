@@ -1,3 +1,4 @@
+### Script para leer datos del Acelerometro  ####
 
 import smbus
 import time
