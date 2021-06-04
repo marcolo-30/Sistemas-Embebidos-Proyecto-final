@@ -1,3 +1,5 @@
+### Script principal ###
+
 import recoge_datos
 import subprocess
 import requests
@@ -23,6 +25,7 @@ def captura_datos():
 		f.close
 	except:
 		print("error")
+		
 def nuevo_archivo():
 
 	subprocess.call(['bash','./guardar.sh'])
