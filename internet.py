@@ -1,3 +1,5 @@
+### Rervisa si existe conexión a internet ###
+
 import requests
 try:
     request = requests.get("https://www.google.com", timeout=5)
