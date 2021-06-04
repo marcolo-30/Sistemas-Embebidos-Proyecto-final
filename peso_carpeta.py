@@ -1,3 +1,6 @@
+### Script para evaluar el peso de la carpeta ###
+# retorna el valor en bytes del peso de la carpeta
+
 import os
 def get_size(start_path = './Carpeta_envio'):
     total_size = 0
