@@ -1,3 +1,8 @@
+#################################################################
+###  Utilizando los scripts de lectura de GPS y acelerometro  ###
+###  captura la informacion y la guarda en un archivo .csv    ###
+#################################################################
+
 import acc as Acc
 import gps as GPS
 import subprocess
