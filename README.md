@@ -4,9 +4,6 @@
   <img width="400" height="280" src="https://user-images.githubusercontent.com/84221113/120844998-d0166800-c535-11eb-8224-03487d0d735f.png">
 </p>
 
-
-
-
 El proyecto final consiste en proponer una solucion a un problema de ingeniería que involucre el uso de un sistema embebido como sistema central de procesamiento.
 
 Para esto se desarrolla una solución IoT para rastrear la posicion de un vehiculo y sus valores de aceleracion durante los recorridos que realice, guardando los datos de los sensores en un archivo .csv, encriptandolos, y enviandolos a un servidor de almacenamiento de información. 
@@ -48,29 +45,14 @@ Se crean 6 procesos en la ejecucion del programa principal:
 
 ## Pruebas
 
+Se muestran los videos de las pruebas del funcionamiento del proyecto 
 
-| Lenguaje      | Programa |
+| Prueba      | Video |
 | ------------- | ------------- |
-| C/C++, libreria Wiring Pi  | [Wiringpi](https://github.com/Fredycuellar/Proyecto1_Sistemas_Embebidos/blob/94931f9a6c48a0345d5b23ea3d00ba4b70d7f1ef/WiringPi) |
-| C/C++, libreria BCM |[BCM](https://github.com/Fredycuellar/Proyecto1_Sistemas_Embebidos/blob/17cf8d916295f7ada7c51e401e840512e4fff93e/BCM_) |
-| Python | [Python](https://github.com/Fredycuellar/Proyecto1_Sistemas_Embebidos/blob/5f52e727b520e943d16d735efebd35be09166315/Python)  |
-|bash | [Bash](https://github.com/Fredycuellar/Proyecto1_Sistemas_Embebidos/blob/d43c243f8bea0d57bbbf3a5e0e3c35a0b7ee1acd/Bash) |
+| Funcionamiento general  | [General](https://www.youtube.com/watch?v=8SYreTL2sc0) |
+| Desconexión de sensores y fuente de alimentación|[Desconexiones](https://www.youtube.com/watch?v=aT4Dv9etTH8) |
+| Desconexión Internet | [Desconexión internet](https://www.youtube.com/watch?v=g9UHI5J2HCA)  |
+| Llenado del File System | [Llenado File system](https://www.youtube.com/watch?v=vMP-sZkJT6s) |
 
 
 
-La conexión para el primer objetivo, para realizar la prueba se realiza el montaje con un led, teniendo en cuenta que la tarjeta raspberry Pi 2 Model B V1.1:
-
-![Montajeled](https://user-images.githubusercontent.com/80786325/111538703-01537900-873b-11eb-9fce-9075bfeef7d4.PNG)
-
-La conexión del sensor ds18b20,en la tarjeta raspberry Pi 2 Model B V1.1, es el siguiente:
-
-![ConexionSensor (1)](https://user-images.githubusercontent.com/80786325/111538879-39f35280-873b-11eb-8fee-31c0a53a4f96.PNG)
-
-A continuación, se indica la programación implementada para el primer objetivo:
-
-| Lenguaje      | Programa |
-| ------------- | ------------- |
-| C/C++, libreria Wiring Pi  | [Wiringpi](https://github.com/Fredycuellar/Proyecto1_Sistemas_Embebidos/blob/94931f9a6c48a0345d5b23ea3d00ba4b70d7f1ef/WiringPi) |
-| C/C++, libreria BCM |[BCM](https://github.com/Fredycuellar/Proyecto1_Sistemas_Embebidos/blob/17cf8d916295f7ada7c51e401e840512e4fff93e/BCM_) |
-| Python | [Python](https://github.com/Fredycuellar/Proyecto1_Sistemas_Embebidos/blob/5f52e727b520e943d16d735efebd35be09166315/Python)  |
-|bash | [Bash](https://github.com/Fredycuellar/Proyecto1_Sistemas_Embebidos/blob/d43c243f8bea0d57bbbf3a5e0e3c35a0b7ee1acd/Bash) |
