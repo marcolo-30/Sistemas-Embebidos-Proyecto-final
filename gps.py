@@ -1,4 +1,4 @@
-### Script para capturar los datos del GPS ###
+### Script para leer los datos del GPS ###
 
 import serial
 import time
