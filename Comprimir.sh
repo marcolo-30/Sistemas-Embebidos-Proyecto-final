@@ -1,5 +1,8 @@
 #! /bin/bash
 
+# Comprime los archivos que esten ubicados en la carpeta temporal Carpeta_temp #
+# Encripta el archivo comprimido  y genera la llave sincrona la cual tambien es encriptada #
+
 file=./Carpeta_temp/
 key=./llaves
 name=$(date +"%Y-%m-%d-%H:%M")_data.enc
@@ -28,4 +31,5 @@ echo llave encriptada
 mv ./Carpeta_temp/*.csv ./Backuparchivos
 mv $name ./Carpeta_envio
 mv aesKey.txt.crypted ./Carpeta_envio
+
 fi
