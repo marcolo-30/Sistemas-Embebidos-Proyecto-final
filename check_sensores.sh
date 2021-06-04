@@ -6,6 +6,7 @@ while true
 
 do
     sensor=$(cat /dev/ttyAMA0 | grep GPGGA) 
+    
     if [ -z "$sensor" ]
       
     sleep 120 
