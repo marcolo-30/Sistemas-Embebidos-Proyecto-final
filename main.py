@@ -63,7 +63,14 @@ def check_carpeta(stop):
         else:
             stop.put(0)
             time.sleep(60)
-            
+        
+def check_sensores():
+	
+	while True:
+    
+        	subprocess.call(['bash','./check_sensores.sh'])
+
+	
 def internet_conect(q):
     while True:
         try:
@@ -99,12 +106,14 @@ if __name__ == "__main__":
     p3 = Process(target=capture, args=(stop,))
     p4 = Process(target=comprime, args=())
     p5 = Process(target=envia, args=(q,))
-    
+    p6 = Process(target=check_sensores, args=())
+	
     p1.start()
     p2.start()
     p3.start()
     p4.start()
     p5.start()
+    p6.start()
 
 
     p1.join()
@@ -112,3 +121,4 @@ if __name__ == "__main__":
     p3.join()
     p4.join()
     p5.join()
+    p6.join()
