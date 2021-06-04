@@ -1,10 +1,20 @@
 # Sistemas-Embebidos-Proyecto-final
 
-![Proyecto]()
+<p align="Center">
+  <img width="400" height="280" src="https://user-images.githubusercontent.com/84221113/120844998-d0166800-c535-11eb-8224-03487d0d735f.png">
+</p>
+
+
+
 
 El proyecto final consiste en proponer una solucion a un problema de ingeniería que involucre el uso de un sistema embebido como sistema central de procesamiento.
 
 Para esto se desarrolla una solución IoT para rastrear la posicion de un vehiculo y sus valores de aceleracion durante los recorridos que realice, guardando los datos de los sensores en un archivo .csv, encriptandolos, y enviandolos a un servidor de almacenamiento de información. 
+
+<p align="center">
+  <img width="400" height="400" src="https://user-images.githubusercontent.com/84221113/120840693-2bddf280-c530-11eb-9e73-0eb4891f7ace.png">
+</p>
+
 
 Para el desarrollo del proyecto se requiere:
 
