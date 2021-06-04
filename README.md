@@ -53,6 +53,7 @@ Se crean 6 procesos en la ejecucion del programa principal:
 |Comprimir los archivos. | [Comprimir.sh](https://github.com/marcolo-30/Sistemas-Embebidos-Proyecto-final/blob/main/Comprimir.sh) |
 | Enviar los archivos comprimidos al servidor | [enviar.sh](https://github.com/marcolo-30/Sistemas-Embebidos-Proyecto-final/blob/main/enviar.sh)  |
 |Revisar la conexión de los sensores.| [check_sensores.sh](https://github.com/marcolo-30/Sistemas-Embebidos-Proyecto-final/blob/main/check_sensores.sh) |
+| Script principal | [main.py](https://github.com/marcolo-30/Sistemas-Embebidos-Proyecto-final/blob/main/main.py)  |
 
 
 ## Pruebas
