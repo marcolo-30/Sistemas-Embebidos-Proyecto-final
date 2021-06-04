@@ -54,6 +54,8 @@ Se muestran los videos de las pruebas del funcionamiento del proyecto
 | Desconexión Internet | [Desconexión internet](https://www.youtube.com/watch?v=g9UHI5J2HCA)  |
 | Llenado del File System | [Llenado File system](https://www.youtube.com/watch?v=vMP-sZkJT6s) |
 
+Nota: los videos de desconexión Internet y llenado de fyle system no poseen audio ya que se grabo directamente el escritorio de la raspberry pi sin tener conexión de audio, en los videos se muestra el funcionamiento del dispositivo cuando no cuenta con conexión a internet. 
+
 ## Conclusiones 
 - El uso de multiprocesamiento facilita la ejecución de scripts en paralelo.
 - Teniendo en cuenta de que los procesos no utilizan el mismo espacio de memoria el uso de colas permite realizar transferencia de informacion entre procesos. 
