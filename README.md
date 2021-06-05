@@ -15,7 +15,7 @@ Para esto se desarrolla una solución IoT para rastrear la posicion de un vehicu
 
 Para el desarrollo del proyecto se requiere:
 
-- Crear y ejecutar scripts diferentes encargados de tareas específicas, de esta forma se aplicaran multiproceso en el sistemas embebidos.
+- Crear y ejecutar scripts diferentes encargados de tareas específicas, de esta forma se aplicará multiproceso en el sistemas embebidos.
 
 - Comunicar los scripts por archivos en disco siempre y cuando la actualización de estos "escritura sobre el mismo archivo" no sea muy alta, por ejemplo uno cada minuto 
 
@@ -55,10 +55,12 @@ Se crean 6 procesos en la ejecucion del programa principal:
 |Revisar la conexión de los sensores.| [check_sensores.sh](https://github.com/marcolo-30/Sistemas-Embebidos-Proyecto-final/blob/main/check_sensores.sh) |
 | Script principal | [main.py](https://github.com/marcolo-30/Sistemas-Embebidos-Proyecto-final/blob/main/main.py)  |
 
+Con estas tareas se ejecuta el programa dando solucion a los requerimientos planteados inicialmente, la explicación del funcionamiento se puede ver en los videos en la sección de pruebas.
+Para dar solución a la desconexción de fuente simulando falla electrica, se implementa un demonio en el sistema utilizando systemd con el fin de garantizar que el proceso siempre este corriendo, si tiene algun error se reinicie automaticamente y si se reinicia el sistema ejecute a los 10 segundos de inicialización del sistema operativo. 
 
 ## Pruebas
 
-Se muestran los videos de las pruebas del funcionamiento del proyecto 
+Se muestran los videos de las pruebas del funcionamiento del proyecto:
 
 | Prueba      | Video |
 | ------------- | ------------- |
