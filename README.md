@@ -56,7 +56,7 @@ Se crean 6 procesos en la ejecucion del programa principal:
 | Script principal | [main.py](https://github.com/marcolo-30/Sistemas-Embebidos-Proyecto-final/blob/main/main.py)  |
 
 Con estas tareas se ejecuta el programa dando solucion a los requerimientos planteados inicialmente, la explicación del funcionamiento se puede ver en los videos en la sección de pruebas.
-Para dar solución a la desconexción de fuente simulando falla electrica, se implementa un demonio en el sistema utilizando systemd con el fin de garantizar que el proceso siempre este corriendo, si tiene algun error se reinicie automaticamente y si se reinicia el sistema ejecute a los 10 segundos de inicialización del sistema operativo. 
+Para dar solución a la desconexción de fuente simulando falla electrica, se implementa un demonio en el sistema utilizando systemd con el fin de garantizar que el proceso siempre este corriendo, si tiene algun error se reinicie automaticamente y si se reinicia el sistema ejecute a los 10 segundos psteriores a la inicialización del sistema operativo. 
 
 ## Pruebas
 
