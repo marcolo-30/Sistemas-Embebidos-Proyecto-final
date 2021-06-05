@@ -67,7 +67,12 @@ Se muestran los videos de las pruebas del funcionamiento del proyecto
 | Desconexión Internet | [Desconexión internet](https://www.youtube.com/watch?v=g9UHI5J2HCA)  |
 | Llenado del File System | [Llenado File system](https://www.youtube.com/watch?v=vMP-sZkJT6s) |
 
-Nota: los videos de desconexión Internet y llenado de fyle system no poseen audio ya que se grabo directamente el escritorio de la raspberry pi sin tener conexión de audio, en los videos se muestra el funcionamiento del dispositivo cuando no cuenta con conexión a internet. 
+### Nota:
+Los videos de desconexión Internet y llenado de fyle system no poseen audio ya que se grabo directamente el escritorio de la raspberry pi sin tener conexión de audio, en los videos se muestra el funcionamiento del dispositivo cuando no cuenta con conexión a internet. 
+
+- En el video de desconexion de internet se desconecta la opcion del wifi en los primeros segundos, se crean y encriptan los archivos al segundo 00:38, se reconecta el wifi al segundo 00:56 y se envian los documentos al servidor al segundo 1:08  se recomienda ver el video con velocidad de reproducción X2. 
+- En el video correspondiente al llenado del file system, se inicia el video con el wifi desconectado y res archivos encriptados a la espera de ser enviados cuando se reconecte el internet, en el segundo 00:20 se genera un nuevo archivo encriptado el cual supera el limite de capacidad fijado y se observa sobre el script el mensaje de file system lleno 
+interrumpiendo la captura de los datos hasta que se libere espacio, esto despues de establecer conexión nuevamente a internet y enviar los archivos liberando espacio en la carpeta. 
 
 ## Conclusiones 
 - El uso de multiprocesamiento facilita la ejecución de scripts en paralelo.
